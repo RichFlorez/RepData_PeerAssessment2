@@ -127,7 +127,7 @@ ggplot(popFatalTop10, aes(x=EVTYPE, y=FATALITIES)) +
   geom_bar(stat="identity") +
   xlab("Event Type") + 
   ylab("Fatalities") +
-  ggtitle("Top 10 U.S. Fatal Severe Weather Impacts 1950-2011")
+  ggtitle("Top 10 U.S. Fatal Severe Weather Impacts 1950-2011") + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
@@ -179,7 +179,7 @@ ggplot(econDamageTop10, aes(x=EVTYPE, y=DamageFactor)) +
   geom_bar(stat="identity") +
   xlab("Event Type") + 
   ylab("Property Damage in US$") +
-  ggtitle("Top 10 U.S. Economic Severe Weather Impacts 1950-2011")
+  ggtitle("Top 10 U.S. Economic Severe Weather Impacts 1950-2011") + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
